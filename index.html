@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Star Wars RPG Game</title>
-  </head>
-  <body>
-    <header id="master-header">Star Wars RPG!</header>
-    <div class="container">
-      <img class="heros" src="assets/images/char-lukeskywalker.jpeg" alt="Luke Skywalker">
-      <img class="heros" src="assets/images/char-vadar.jpeg" alt="Darth Vadar">
-      <img class="heros" src="assets/images/char-yoda.jpg" alt="Yoda">
+
+<head>
+  <meta charset="utf-8">
+  <title>Star Wars RPG Game</title>
+  <!-- Links style.css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Links reset.css -->
+  <!--<link rel="stylesheet" href="assets/css/reset.css"-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <!--<script type="text/javascript" src="assets/javascript/game.js"</script>-->
+</head>
+
+<body>
+  <div class="col-md-12">
+    <h1>Star Wars RPG!</h1>
+  </div>
+  <div class="row">
+    <div class="col-md-8" id="main-section">
+      <div class="row">
+        <div class="col-md-12" id="characters">
+          <div id="luke-sky" class="character-div">
+            <img src="assets/images/char-lukeskywalker.jpeg" class="character center-block" alt="Luke Skywalker">
+            <p class="text-center">Luke SkyWalker</p>
+            <p class="text-center" id="lukeHP">120</p>
+          </div>
+          <div id="darth-vadar" class="character-div">
+            <img src="assets/images/char-vadar.jpeg" class="character center-block" alt="Darth Vadar">
+            <p class="text-center">Darth Vadar</p>
+            <p class="text-center" id="vadarHP">150</p>
+          </div>
+          <div id="yoda" class="character-div">
+            <img src="assets/images/char-yoda.jpg" class="character center-block" alt="Yoda">
+            <p class="text-center">Yoda</p>
+            <p class="text-center" id="yodaHP">120</p>
+          </div>
+          <div id="darth-maul" class="character-div">
+            <img src="assets/images/char-darthmaul.jpg" class="character center-block" alt="Darth Maul">
+            <p class="text-center">Darth Maul</p>
+            <p class="text-center" id="maulHP">150</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+  <div class="row">
+    <div class="col-md-12" id="character-chosen">
+      <h2>Choose Your Character</h2>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <div class="row">
+    <div class="col-md-12" id="enemeies">
+      <h2>Enemies Available To Attack</h2>
+      <h2>Fight Section</h2>
+      <button id="attackbtn">Attack</button>
+      <h2>Defender</h2>
+    </div>
+  </div>
+</body>
+
 </html>
